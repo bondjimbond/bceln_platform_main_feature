@@ -47,17 +47,13 @@ function bceln_theme_modifications_views_default_views() {
   $handler->display->display_options['fields']['fgs_createdDate_mt']['field'] = 'fgs_createdDate_mt';
   $handler->display->display_options['fields']['fgs_createdDate_mt']['label'] = 'Created Date';
   $handler->display->display_options['fields']['fgs_createdDate_mt']['element_type'] = 'div';
-  $handler->display->display_options['fields']['fgs_createdDate_mt']['element_class'] = 'collection-item-details-field-value';
   $handler->display->display_options['fields']['fgs_createdDate_mt']['element_label_type'] = 'div';
-  $handler->display->display_options['fields']['fgs_createdDate_mt']['element_label_class'] = 'collection-item-details-field-label';
   $handler->display->display_options['fields']['fgs_createdDate_mt']['link_to_object'] = 0;
   /* Field: Islandora Solr: dc.type */
   $handler->display->display_options['fields']['dc.type']['id'] = 'dc.type';
   $handler->display->display_options['fields']['dc.type']['table'] = 'islandora_solr';
   $handler->display->display_options['fields']['dc.type']['field'] = 'dc.type';
   $handler->display->display_options['fields']['dc.type']['label'] = 'Type';
-  $handler->display->display_options['fields']['dc.type']['element_class'] = 'collection-item-details-field-value';
-  $handler->display->display_options['fields']['dc.type']['element_label_class'] = 'collection-item-details-field-label';
   $handler->display->display_options['fields']['dc.type']['link_to_object'] = 0;
   /* Contextual filter: Islandora Solr: PID */
   $handler->display->display_options['arguments']['PID']['id'] = 'PID';
