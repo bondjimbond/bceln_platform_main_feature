@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCELN Theme Modifications feature.
+ */
+
+include_once 'bceln_theme_modifications.features.inc';

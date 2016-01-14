@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCELN Platform Main Feature feature.
+ */
+
+include_once 'bceln_platform_main_feature.features.inc';

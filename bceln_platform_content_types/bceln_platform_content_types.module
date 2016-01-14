@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the BCELN Platform Content Types feature.
+ */
+
+include_once 'bceln_platform_content_types.features.inc';
