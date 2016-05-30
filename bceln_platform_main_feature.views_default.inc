@@ -117,28 +117,6 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'usage_stats');
   $handler->display->display_options['block_description'] = 'Usage Stats for Collections';
-  $translatables['clone_of_islandora_usage_stats_for_collections'] = array(
-    t('Master'),
-    t('Collection Usage Stats'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('No view counts found.'),
-    t('Collection'),
-    t('Object'),
-    t('Collection Object'),
-    t('Object Collection Access'),
-    t('<a href="/islandora/object/[pid]" title="[label]">[label]</a>'),
-    t('<span>([id])</span>'),
-    t('.'),
-    t(','),
-    t('All'),
-    t('Block'),
-    t('Usage Stats for Collections'),
-  );
   $export['clone_of_islandora_usage_stats_for_collections'] = $view;
 
   $view = new view();
@@ -204,16 +182,6 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $translatables['footer_view_alternative'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Block'),
-  );
   $export['footer_view_alternative'] = $view;
 
   $view = new view();
@@ -308,18 +276,11 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $translatables['footer_view_primary'] = array(
-    t('Master'),
-    t('Footer View Primary'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('<a title="[title]" href="[field_image_block_link]">[field_image_block]</a>'),
-    t('Block'),
-  );
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Sort Order (field_sort_order) */
+  $handler->display->display_options['sorts']['field_sort_order_value']['id'] = 'field_sort_order_value';
+  $handler->display->display_options['sorts']['field_sort_order_value']['table'] = 'field_data_field_sort_order';
+  $handler->display->display_options['sorts']['field_sort_order_value']['field'] = 'field_sort_order_value';
   $export['footer_view_primary'] = $view;
 
   $view = new view();
@@ -373,17 +334,6 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
-  $translatables['frontpage_slideshow'] = array(
-    t('Master'),
-    t('Frontpage Slideshow'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Block'),
-  );
   $export['frontpage_slideshow'] = $view;
 
   $view = new view();
@@ -435,18 +385,6 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
 
   /* Display: Recently Added to collection */
   $handler = $view->new_display('block', 'Recently Added to collection', 'block');
-  $translatables['recently_added_to_collection'] = array(
-    t('Master'),
-    t('Recently Added'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('All'),
-    t('Recently Added to collection'),
-  );
   $export['recently_added_to_collection'] = $view;
 
   $view = new view();
@@ -536,30 +474,6 @@ if (is_object($object) && in_array(\'islandora:collectionCModel\', $object->mode
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $translatables['sort_by_title'] = array(
-    t('Master'),
-    t('Search Within Collection'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('<a href="/islandora/object/[PID]"><img src="/islandora/object/[PID]/datastream/TN/view"/></a>'),
-    t('Title'),
-    t('All'),
-    t('Search Text'),
-    t('Operator Label'),
-    t('Page'),
-    t('Block'),
-  );
   $export['sort_by_title'] = $view;
 
   return $export;

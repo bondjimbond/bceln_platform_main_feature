@@ -117,12 +117,21 @@ function bceln_platform_main_feature_default_fe_block_settings() {
 
   $export['islandora_bookmark-islandora_bookmark'] = array(
     'cache' => -1,
-    'css_class' => '',
+    'css_class' => 'bookmark',
     'custom' => 0,
     'delta' => 'islandora_bookmark',
     'module' => 'islandora_bookmark',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => 'islandora/object/cc*
+islandora/object/dc*
+islandora/object/jibc*
+islandora/object/unbc*
+islandora/object/ecuad*
+islandora/object/tru*
+islandora/object/twu*
+islandora/object/sc*
+islandora/object/ufv*
+islandora/object/cotr*',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -135,7 +144,7 @@ function bceln_platform_main_feature_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'bceln_theme',
-        'weight' => -20,
+        'weight' => -35,
       ),
       'seven' => array(
         'region' => '',
@@ -144,8 +153,8 @@ function bceln_platform_main_feature_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => 'Bookmark',
-    'visibility' => 0,
+    'title' => '<none>',
+    'visibility' => 1,
   );
 
   $export['islandora_bookmark-islandora_bookmark_list_info'] = array(
@@ -234,7 +243,7 @@ function bceln_platform_main_feature_default_fe_block_settings() {
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -9,
+        'weight' => -37,
       ),
       'seven' => array(
         'region' => '',
@@ -267,7 +276,7 @@ function bceln_platform_main_feature_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -37,
+        'weight' => -38,
       ),
       'seven' => array(
         'region' => '',
@@ -301,7 +310,7 @@ islandora/search',
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -40,
+        'weight' => -37,
       ),
       'seven' => array(
         'region' => '',
@@ -367,7 +376,7 @@ islandora/search',
         'region' => '',
         'status' => 0,
         'theme' => 'bceln_theme',
-        'weight' => -40,
+        'weight' => -37,
       ),
       'seven' => array(
         'region' => '',
@@ -486,7 +495,7 @@ islandora/search',
     'delta' => 'sort',
     'module' => 'islandora_solr',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => '<front>',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -496,10 +505,10 @@ islandora/search',
         'weight' => 0,
       ),
       'bceln_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'sidebar_first',
+        'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -17,
+        'weight' => -39,
       ),
       'seven' => array(
         'region' => '',
@@ -580,12 +589,12 @@ islandora/search',
 
   $export['islandora_usage_stats-top_usage'] = array(
     'cache' => 1,
-    'css_class' => '',
+    'css_class' => 'mostviewed',
     'custom' => 0,
     'delta' => 'top_usage',
     'module' => 'islandora_usage_stats',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => 'about/usage',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -595,10 +604,10 @@ islandora/search',
         'weight' => 0,
       ),
       'bceln_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'content',
+        'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -35,
+        'weight' => -33,
       ),
       'seven' => array(
         'region' => '',
@@ -608,7 +617,7 @@ islandora/search',
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['menu-menu-bceln-main'] = array(
@@ -664,7 +673,7 @@ islandora/search',
         'region' => '',
         'status' => 0,
         'theme' => 'bceln_theme',
-        'weight' => -40,
+        'weight' => -37,
       ),
       'seven' => array(
         'region' => '',
@@ -862,7 +871,7 @@ islandora/search',
         'region' => 'content',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -39,
+        'weight' => -35,
       ),
       'seven' => array(
         'region' => 'content',
@@ -1028,7 +1037,7 @@ islandora/search/*',
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -39,
+        'weight' => -36,
       ),
       'seven' => array(
         'region' => '',
@@ -1062,7 +1071,7 @@ islandora/search/*',
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -38,
+        'weight' => -35,
       ),
       'seven' => array(
         'region' => '',
@@ -1071,7 +1080,7 @@ islandora/search/*',
         'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => 'Recently Added',
     'visibility' => 0,
   );
 
@@ -1092,8 +1101,8 @@ islandora/search/*',
         'weight' => 0,
       ),
       'bceln_theme' => array(
-        'region' => 'footer',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'bceln_theme',
         'weight' => 0,
       ),
@@ -1125,10 +1134,10 @@ islandora/search/*',
         'weight' => 0,
       ),
       'bceln_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'footer',
+        'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -39,
+        'weight' => -36,
       ),
       'seven' => array(
         'region' => '',
@@ -1161,7 +1170,7 @@ islandora/search/*',
         'region' => '',
         'status' => 0,
         'theme' => 'bceln_theme',
-        'weight' => -40,
+        'weight' => -37,
       ),
       'seven' => array(
         'region' => '',

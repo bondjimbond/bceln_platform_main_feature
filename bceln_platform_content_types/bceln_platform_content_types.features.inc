@@ -26,6 +26,22 @@ function bceln_platform_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'institution' => array(
+      'name' => t('Institution'),
+      'base' => 'node_content',
+      'description' => t('Contains information about Arca member institutions.'),
+      'has_title' => '1',
+      'title_label' => t('Institution Name'),
+      'help' => '',
+    ),
+    'islandora_autocomplete_fields' => array(
+      'name' => t('Islandora Autocomplete Fields'),
+      'base' => 'node_content',
+      'description' => t('Sets up taxonomies for autocomplete textfields in Islandora ingest forms.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
   );
   drupal_alter('node_info', $items);
   return $items;
