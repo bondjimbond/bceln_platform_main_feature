@@ -152,7 +152,6 @@ features[user_permission][] = access content overview
 features[user_permission][] = access contextual links
 features[user_permission][] = access dashboard
 features[user_permission][] = access google analytics reports
-features[user_permission][] = access overlay
 features[user_permission][] = access own authorizations
 features[user_permission][] = access own consumers
 features[user_permission][] = access rules debug

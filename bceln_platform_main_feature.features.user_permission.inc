@@ -196,17 +196,6 @@ function bceln_platform_main_feature_user_default_permissions() {
     'module' => 'google_analytics_reports',
   );
 
-  // Exported permission: 'access overlay'.
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
-    'roles' => array(
-      'IR staff' => 'IR staff',
-      'Local administrator' => 'Local administrator',
-      'administrator' => 'administrator',
-    ),
-    'module' => 'overlay',
-  );
-
   // Exported permission: 'access own authorizations'.
   $permissions['access own authorizations'] = array(
     'name' => 'access own authorizations',
