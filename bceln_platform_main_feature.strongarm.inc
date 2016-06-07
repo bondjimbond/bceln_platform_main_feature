@@ -76,104 +76,6 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_institution';
-  $strongarm->value = 0;
-  $export['comment_anonymous_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_anonymous_islandora_autocomplete_fields';
-  $strongarm->value = 0;
-  $export['comment_anonymous_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_institution';
-  $strongarm->value = 1;
-  $export['comment_default_mode_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_mode_islandora_autocomplete_fields';
-  $strongarm->value = 1;
-  $export['comment_default_mode_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_institution';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_default_per_page_islandora_autocomplete_fields';
-  $strongarm->value = '50';
-  $export['comment_default_per_page_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_institution';
-  $strongarm->value = 1;
-  $export['comment_form_location_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_form_location_islandora_autocomplete_fields';
-  $strongarm->value = 1;
-  $export['comment_form_location_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_institution';
-  $strongarm->value = '1';
-  $export['comment_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_islandora_autocomplete_fields';
-  $strongarm->value = '1';
-  $export['comment_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_institution';
-  $strongarm->value = '1';
-  $export['comment_preview_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_preview_islandora_autocomplete_fields';
-  $strongarm->value = '1';
-  $export['comment_preview_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_institution';
-  $strongarm->value = 1;
-  $export['comment_subject_field_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'comment_subject_field_islandora_autocomplete_fields';
-  $strongarm->value = 1;
-  $export['comment_subject_field_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'designkit_color';
   $strongarm->value = array(
     'main' => '#fffff5',
@@ -186,40 +88,6 @@ function bceln_platform_main_feature_strongarm() {
     'menu_color' => '#5b186a',
   );
   $export['designkit_color'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__institution';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '0',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__islandora_autocomplete_fields';
-  $strongarm->value = array(
-    'view_modes' => array(),
-    'extra_fields' => array(
-      'form' => array(
-        'title' => array(
-          'weight' => '-5',
-        ),
-      ),
-      'display' => array(),
-    ),
-  );
-  $export['field_bundle_settings_node__islandora_autocomplete_fields'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -330,85 +198,9 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_institution';
-  $strongarm->value = array();
-  $export['menu_options_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_islandora_autocomplete_fields';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
-  $export['menu_options_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_institution';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_islandora_autocomplete_fields';
-  $strongarm->value = 'main-menu:0';
-  $export['menu_parent_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_export_existing';
   $strongarm->value = 'skip';
   $export['node_export_existing'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_institution';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_islandora_autocomplete_fields';
-  $strongarm->value = array(
-    0 => 'status',
-  );
-  $export['node_options_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_institution';
-  $strongarm->value = '1';
-  $export['node_preview_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_islandora_autocomplete_fields';
-  $strongarm->value = '1';
-  $export['node_preview_islandora_autocomplete_fields'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_institution';
-  $strongarm->value = 0;
-  $export['node_submitted_institution'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_islandora_autocomplete_fields';
-  $strongarm->value = 0;
-  $export['node_submitted_islandora_autocomplete_fields'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -421,14 +213,14 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'Arca: Discover BC\'s Digital Treasures.';
+  $strongarm->value = 'BRITISH COLUMBIA';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_slogan';
-  $strongarm->value = '';
+  $strongarm->value = 'Managing Digital Content';
   $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -901,8 +693,8 @@ sites/all/libraries/superfish/sfsmallscreen.js';
     'default_logo' => 1,
     'logo_path' => '',
     'logo_upload' => '',
-    'default_favicon' => 0,
-    'favicon_path' => 'public://ARCA-Favicon-3.ico',
+    'default_favicon' => 1,
+    'favicon_path' => '',
     'favicon_upload' => '',
     'zen_breadcrumb' => 'yes',
     'zen_breadcrumb_separator' => ' › ',
@@ -916,18 +708,15 @@ sites/all/libraries/superfish/sfsmallscreen.js';
       'html5' => 'html5',
       'meta' => 'meta',
     ),
-    'zen_rebuild_registry' => 0,
+    'zen_rebuild_registry' => 1,
     'zen_wireframes' => 0,
-    'bceln_theme_search_text' => 'Search Arca and discover institutional treasures from 10 BC post-secondary institutions. You\'ll find scholarly research materials and digital assets like newsletters, images, multimedia, and much more.  Arca is under construction - keeping watching for exciting new content!',
-    'bceln_theme_search_heading' => 'Discover BC\'s Digital Treasures.',
-    'bceln_theme_collections_meta' => '1',
-    'bceln_slideshow_pids' => 'bceln:38,bceln:74,bceln:75,bceln:76',
-    'bceln_show_basic_record' => '0',
-    'bceln_show_collection_search' => '0',
-    'bceln_background_dsid' => 'OBJ',
-    'bceln_bio_label' => 'Biography',
-    'bceln_meta_des' => 'Description',
-    'bceln_collection_items_details' => '1',
+    'bceln_theme_search_text' => 'Search Arca and discover institutional treasures. Find scholarly research materials and other digital assets like newsletters, images, multimedia, and much more.',
+    'bceln_theme_search_heading' => 'Discovery BC\'s Digital Treasures',
+    'bceln_theme_collections_meta' => '0',
+    'bceln_slideshow_pids' => 'islandora:38,islandora:39',
+    'bceln_show_basic_record' => '1',
+    'bceln_show_collection_search' => '1',
+    'bceln_background_dsid' => 'JPG',
     'designkit_color' => array(
       'main' => '#fffff5',
       'header' => '#ffffff',
@@ -938,8 +727,6 @@ sites/all/libraries/superfish/sfsmallscreen.js';
       'front_box' => '#5b186a',
       'menu_color' => '#5b186a',
     ),
-    'jquery_update_jquery_version' => '',
-    'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
   $export['theme_bceln_theme_settings'] = $strongarm;
 
