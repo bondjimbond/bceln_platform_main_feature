@@ -10,26 +10,6 @@
 function bceln_platform_main_feature_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: menu-bceln-main_browse-by-institution:islandora.
-  $menu_links['menu-bceln-main_browse-by-institution:islandora'] = array(
-    'menu_name' => 'menu-bceln-main',
-    'link_path' => 'islandora',
-    'router_path' => 'islandora',
-    'link_title' => 'Browse by Institution',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-bceln-main_browse-by-institution:islandora',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 0,
-  );
   // Exported menu link: menu-bceln-main_home:<front>.
   $menu_links['menu-bceln-main_home:<front>'] = array(
     'menu_name' => 'menu-bceln-main',
@@ -238,26 +218,6 @@ function bceln_platform_main_feature_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: menu-front-collection-links_top-level-collection:Islandora/object/islandora:root.
-  $menu_links['menu-front-collection-links_top-level-collection:Islandora/object/islandora:root'] = array(
-    'menu_name' => 'menu-front-collection-links',
-    'link_path' => 'Islandora/object/islandora:root',
-    'router_path' => 'islandora/object/%',
-    'link_title' => 'Top Level Collection',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-front-collection-links_top-level-collection:Islandora/object/islandora:root',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => 0,
-    'customized' => 1,
-  );
   // Exported menu link: menu-header-menu_about-this-site:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5.
   $menu_links['menu-header-menu_about-this-site:uuid/node/3dfbfeaf-cb77-4ac0-b16f-145af17649b5'] = array(
     'menu_name' => 'menu-header-menu',
@@ -298,26 +258,6 @@ function bceln_platform_main_feature_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: menu-header-menu_graduate-projects:islandora.
-  $menu_links['menu-header-menu_graduate-projects:islandora'] = array(
-    'menu_name' => 'menu-header-menu',
-    'link_path' => 'islandora',
-    'router_path' => 'islandora',
-    'link_title' => 'Graduate Projects',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-header-menu_graduate-projects:islandora',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
   // Exported menu link: menu-header-menu_make-contact:uuid/node/329a2134-140a-4447-a59f-389948bef2ba.
   $menu_links['menu-header-menu_make-contact:uuid/node/329a2134-140a-4447-a59f-389948bef2ba'] = array(
     'menu_name' => 'menu-header-menu',
@@ -343,16 +283,13 @@ function bceln_platform_main_feature_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('About this site');
   t('Browse Collections');
-  t('Browse by Institution');
   t('Creative content license');
-  t('Graduate Projects');
   t('Home');
   t('Login');
   t('Logout');
   t('Make contact');
   t('Policies');
   t('Researchers');
-  t('Top Level Collection');
 
   return $menu_links;
 }

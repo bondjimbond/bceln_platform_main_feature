@@ -31,15 +31,14 @@ function bceln_platform_content_types_menu_default_menu_custom() {
   // Exported menu: menu-front-collection-links.
   $menus['menu-front-collection-links'] = array(
     'menu_name' => 'menu-front-collection-links',
-    'title' => 'Front Collection Links',
+    'title' => 'Frontpage menu (right column)',
     'description' => '',
   );
   // Exported menu: menu-header-menu.
   $menus['menu-header-menu'] = array(
     'menu_name' => 'menu-header-menu',
-    'title' => 'Header Menu',
-    'description' => '
-',
+    'title' => 'Frontpage menu (left column)',
+    'description' => '',
   );
   // Exported menu: navigation.
   $menus['navigation'] = array(
@@ -55,19 +54,16 @@ function bceln_platform_content_types_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('
-');
   t('BCELN main');
   t('Footer Menu');
-  t('Front Collection Links');
-  t('Header Menu');
+  t('Frontpage menu (left column)');
+  t('Frontpage menu (right column)');
   t('Main menu');
   t('Navigation');
   t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
   t('The <em>Navigation</em> menu contains links intended for site visitors. Links are added to the <em>Navigation</em> menu automatically by some modules.');
   t('The <em>User</em> menu contains links related to the user\'s account, as well as the \'Log out\' link.');
   t('User menu');
-
 
   return $menus;
 }

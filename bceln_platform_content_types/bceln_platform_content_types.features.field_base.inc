@@ -10,7 +10,7 @@
 function bceln_platform_content_types_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function bceln_platform_content_types_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_image_block'
+  // Exported field_base: 'field_image_block'.
   $field_bases['field_image_block'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -53,7 +53,7 @@ function bceln_platform_content_types_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_image_block_link'
+  // Exported field_base: 'field_image_block_link'.
   $field_bases['field_image_block_link'] = array(
     'active' => 1,
     'cardinality' => 1,

@@ -92,6 +92,13 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'imagemagick_convert';
+  $strongarm->value = '/usr/bin/convert';
+  $export['imagemagick_convert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'islandora_audio_viewers';
   $strongarm->value = array(
     'name' => array(
@@ -181,6 +188,14 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm->name = 'islandora_solr_metadata_omit_empty_values';
   $strongarm->value = 1;
   $export['islandora_solr_metadata_omit_empty_values'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'islandora_use_kakadu';
+  $strongarm->value = 1;
+  $export['islandora_use_kakadu'] = $strongarm;
+
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
