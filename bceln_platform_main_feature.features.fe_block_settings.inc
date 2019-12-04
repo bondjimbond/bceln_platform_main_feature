@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * bceln_platform_main_feature.features.fe_block_settings.inc
@@ -243,7 +244,7 @@ islandora/object/cotr*',
         'region' => 'sidebar_second',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -37,
+        'weight' => -41,
       ),
       'seven' => array(
         'region' => '',
@@ -276,7 +277,7 @@ islandora/object/cotr*',
         'region' => 'content',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -38,
+        'weight' => -32,
       ),
       'seven' => array(
         'region' => '',
@@ -310,7 +311,7 @@ islandora/search',
         'region' => 'sidebar_first',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -37,
+        'weight' => -40,
       ),
       'seven' => array(
         'region' => '',
@@ -505,8 +506,8 @@ islandora/search',
         'weight' => 0,
       ),
       'bceln_theme' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'bceln_theme',
         'weight' => -39,
       ),
@@ -607,7 +608,7 @@ islandora/search',
         'region' => 'content',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -33,
+        'weight' => -29,
       ),
       'seven' => array(
         'region' => '',
@@ -871,7 +872,7 @@ islandora/search',
         'region' => 'content',
         'status' => 1,
         'theme' => 'bceln_theme',
-        'weight' => -35,
+        'weight' => -31,
       ),
       'seven' => array(
         'region' => 'content',
@@ -1016,107 +1017,6 @@ islandora/search',
     'visibility' => 0,
   );
 
-  $export['views-a6803c27312ad17d6a196ab1793ef7e2'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'a6803c27312ad17d6a196ab1793ef7e2',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'islandora/search
-islandora/search/*',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bceln_theme' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'bceln_theme',
-        'weight' => -36,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => 'Most Viewed',
-    'visibility' => 0,
-  );
-
-  $export['views-fa24ffb32c2961dda709a6100317ea9f'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'fa24ffb32c2961dda709a6100317ea9f',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'islandora/search
-islandora/search/*',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bceln_theme' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'bceln_theme',
-        'weight' => -35,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => 'Recently Added',
-    'visibility' => 0,
-  );
-
-  $export['views-footer_view_alternative-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'footer_view_alternative-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '<front>',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bceln_theme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bceln_theme',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   $export['views-footer_view_primary-block'] = array(
     'cache' => -1,
     'css_class' => '',
@@ -1147,39 +1047,6 @@ islandora/search/*',
       ),
     ),
     'title' => '<none>',
-    'visibility' => 0,
-  );
-
-  $export['views-sort_by_title-block'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'sort_by_title-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'bceln_theme' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bceln_theme',
-        'weight' => -37,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
     'visibility' => 0,
   );
 

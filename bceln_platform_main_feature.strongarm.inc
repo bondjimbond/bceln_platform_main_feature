@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * bceln_platform_main_feature.strongarm.inc
@@ -104,8 +105,9 @@ function bceln_platform_main_feature_strongarm() {
     'name' => array(
       'none' => 'none',
       'islandora_jwplayer' => 'islandora_jwplayer',
+      'islandora_videojs' => 'islandora_videojs',
     ),
-    'default' => 'islandora_jwplayer',
+    'default' => 'islandora_videojs',
   );
   $export['islandora_audio_viewers'] = $strongarm;
 
@@ -170,6 +172,7 @@ function bceln_platform_main_feature_strongarm() {
     'name' => array(
       'none' => 'none',
       'islandora_openseadragon' => 'islandora_openseadragon',
+      'islandora_pdfjs' => 'islandora_pdfjs',
     ),
     'default' => 'islandora_openseadragon',
   );
@@ -196,7 +199,6 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm->value = 1;
   $export['islandora_use_kakadu'] = $strongarm;
 
-
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -205,8 +207,9 @@ function bceln_platform_main_feature_strongarm() {
     'name' => array(
       'none' => 'none',
       'islandora_jwplayer' => 'islandora_jwplayer',
+      'islandora_videojs' => 'islandora_videojs',
     ),
-    'default' => 'islandora_jwplayer',
+    'default' => 'islandora_videojs',
   );
   $export['islandora_video_viewers'] = $strongarm;
 
@@ -228,14 +231,14 @@ function bceln_platform_main_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'BRITISH COLUMBIA';
+  $strongarm->value = 'Arca: Discover BC\'s Digital Treasures.';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_slogan';
-  $strongarm->value = 'Managing Digital Content';
+  $strongarm->value = '';
   $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -708,8 +711,8 @@ sites/all/libraries/superfish/sfsmallscreen.js';
     'default_logo' => 1,
     'logo_path' => '',
     'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
+    'default_favicon' => 0,
+    'favicon_path' => 'public://ARCA-Favicon-3.ico',
     'favicon_upload' => '',
     'zen_breadcrumb' => 'yes',
     'zen_breadcrumb_separator' => ' › ',
@@ -723,15 +726,18 @@ sites/all/libraries/superfish/sfsmallscreen.js';
       'html5' => 'html5',
       'meta' => 'meta',
     ),
-    'zen_rebuild_registry' => 1,
+    'zen_rebuild_registry' => 0,
     'zen_wireframes' => 0,
-    'bceln_theme_search_text' => 'Search Arca and discover institutional treasures. Find scholarly research materials and other digital assets like newsletters, images, multimedia, and much more.',
-    'bceln_theme_search_heading' => 'Discovery BC\'s Digital Treasures',
-    'bceln_theme_collections_meta' => '0',
-    'bceln_slideshow_pids' => 'islandora:38,islandora:39',
-    'bceln_show_basic_record' => '1',
-    'bceln_show_collection_search' => '1',
-    'bceln_background_dsid' => 'JPG',
+    'bceln_theme_search_text' => 'Search Arca and discover BC treasures from post-secondary & memory institutions. You\'ll find scholarly research materials and digital assets like newsletters, images, multimedia, and much more.  Keep coming back as Arca grows!',
+    'bceln_theme_search_heading' => 'Discover BC\'s Digital Treasures.',
+    'bceln_theme_collections_meta' => '1',
+    'bceln_slideshow_pids' => 'bceln:38,bceln:74,bceln:75,bceln:76,bceln:184',
+    'bceln_show_basic_record' => '0',
+    'bceln_show_collection_search' => '0',
+    'bceln_background_dsid' => 'OBJ',
+    'bceln_bio_label' => 'Biography',
+    'bceln_meta_des' => 'Description',
+    'bceln_collection_items_details' => '1',
     'designkit_color' => array(
       'main' => '#fffff5',
       'header' => '#ffffff',
@@ -742,6 +748,7 @@ sites/all/libraries/superfish/sfsmallscreen.js';
       'front_box' => '#5b186a',
       'menu_color' => '#5b186a',
     ),
+    'favicon_mimetype' => 'image/vnd.microsoft.icon',
   );
   $export['theme_bceln_theme_settings'] = $strongarm;
 
